@@ -20,7 +20,7 @@ public class UserMain {
 			System.out.println("1. New Registration");
 			System.out.println("2. Sign In");
 			System.out.println("3. Sign Out");
-			System.out.println("Enter your choice (1-3):");
+			System.out.println("Enter your choice (1-3):\n");
 			n=Integer.parseInt(br.readLine());
 			
 			switch(n)
@@ -31,18 +31,18 @@ public class UserMain {
 				break;
 				
 			case 2:
-				System.out.println("Enter your username:");
+				System.out.println("Enter your username:\n");
 				String username=br.readLine();
-				System.out.println("Enter your password:");
+				System.out.println("Enter your password:\n");
 				String pass=br.readLine();
 				UserInterfaceImplementation obj2=new UserInterfaceImplementation();
 				boolean flag1=obj2.signIn(username,pass);
 				if(flag1==true)
 				{
-					System.out.println("Logged In succesfully!");
+					System.out.println("Logged In succesfully!\n");
 				}
 				else
-					System.out.println("UserId not registered...Press 1 to register.");
+					System.out.println("UserId not registered...Press 1 to register.\n");
 					break;
 				
 			case 3:
@@ -50,10 +50,10 @@ public class UserMain {
 				boolean flag2=obj3.signOut();
 				if(flag2==true)
 				{
-					System.out.println("Signout succesfull!!");
+					System.out.println("Signout succesfull!!\n");
 				}
 				else
-					System.out.println("Signout failed!!");
+					System.out.println("Signout failed!!\n");
 				    break;
 			default:
 				System.out.println("Invalid choice!!");

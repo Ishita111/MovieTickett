@@ -34,25 +34,25 @@ public class UserInterfaceImplementation implements UserInterface{
 						obj.setUserName(userName);
 						obj.setPassword(password);
 						al.add(obj);
-						System.out.println("User registered.");
+						System.out.println("User registered.\n");
 					}
 					else
 					{
-						System.out.println("Password should be minimum 8 characters\nPlease enter again\n.");
+						System.out.println("Password should be minimum 8 characters.\nPlease enter again\n.");
 						UserInterfaceImplementation u=new UserInterfaceImplementation();
 						u.registerNewUser();
 					}
 				}
 			else
 			{
-				System.out.println("Enter Correct UserName");
+				System.out.println("Enter correct user name:\n");
 				UserInterfaceImplementation u=new UserInterfaceImplementation();
 				u.registerNewUser();
 			}
 		}
 		else
 		{
-			System.out.println("Enter Correct UserID");
+			System.out.println("Enter Correct UserId:\n");
 			UserInterfaceImplementation u=new UserInterfaceImplementation();
 			u.registerNewUser();
 		}
